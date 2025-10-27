@@ -32,8 +32,7 @@ function ExpenseTracker() {
   const handleDelete = (i) => {
     setExpenses(expenses.filter((_, index) => index !== i));
   };
-
-  // 🧮 Calculate total amount
+  // Calculate total amount
   const totalAmount = expenses.reduce((total, item) => total + item.amount, 0);
 
   return (
@@ -65,7 +64,7 @@ function ExpenseTracker() {
         ))}
       </ul>
 
-      {/* 💵 Total amount display */}
+      {/*Total amount display */}
       <h3>Total: ₹{totalAmount}</h3>
     </>
   );
